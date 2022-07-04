@@ -475,7 +475,15 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
             walletTitle = getString(R.string.toolbar_header_wallet);
         }
 
-        getFragment(WALLET).setToolbarTitle(walletTitle);
+        // avoid crashing when accessing fragment before its created
+        try
+        {
+            getFragment(WALLET).setToolbarTitle(walletTitle);
+        }
+        catch (Exception e)
+        {
+            Timber.e(e);
+        }
     }
 
     private void onError(ErrorEnvelope errorEnvelope)
