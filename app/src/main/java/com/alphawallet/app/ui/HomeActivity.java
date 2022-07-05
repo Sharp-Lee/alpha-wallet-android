@@ -475,7 +475,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
             walletTitle = getString(R.string.toolbar_header_wallet);
         }
 
-        // avoid crashing when accessing fragment before its created
+        // putting in a try catch to avoid crashing the app
         try
         {
             getFragment(WALLET).setToolbarTitle(walletTitle);
@@ -496,7 +496,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     protected void onResume()
     {
         super.onResume();
-        viewModel.prepare();
+        viewModel.prepare(this);
         viewModel.getWalletName(this);
         viewModel.setErrorCallback(this);
         if (homeReceiver == null)
