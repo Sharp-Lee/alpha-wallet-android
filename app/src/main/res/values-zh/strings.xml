@@ -491,7 +491,7 @@
     <string name="postponed_backup_warning">备份已推迟。</string>
     <string name="key_error">密钥错误</string>
     <string name="password_6_characters_or_more">密码为 6 个字符或以上</string>
-    <string name="create_a_new_wallet">创建新钱包</string>
+    <string name="create_a_new_wallet">创建钱包</string>
     <string name="watch">查看</string>
     <string name="already_have_a_wallet">我已经有一个钱包：</string>
     <string name="watch_wallet">只能查看的钱包</string>

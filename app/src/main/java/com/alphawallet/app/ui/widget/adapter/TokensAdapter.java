@@ -411,14 +411,14 @@ public class TokensAdapter extends RecyclerView.Adapter<BinderViewHolder> {
         addSearchTokensLayout();
         addTestNetTips();
 
-//        if (managementLauncher != null) addManageTokensLayout();
+        if (managementLauncher != null) addManageTokensLayout();
 
         for (TokenCardMeta token : tokens)
         {
             updateToken(token, false);
         }
 
-//        addManageTokensLayout();
+        addManageTokensLayout();
 
         items.endBatchedUpdates();
     }

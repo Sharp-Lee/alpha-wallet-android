@@ -149,7 +149,7 @@ public class CustomViewSettings
     public static boolean minimiseBrowserURLBar() { return false; }
 
     //Allow showing token management view
-    public static boolean showManageTokens() { return true; }
+    public static boolean showManageTokens() { return false; }
 
     //Show all networks in Select Network screen. Set to `true` to show only filtered networks.
     public static boolean showAllNetworks() { return false; }
