@@ -856,13 +856,13 @@
     <string name="label_external_link">External Link</string>
     <string name="label_description">Description</string>
     <string name="label_details">Details</string>
-    <string name="title_dark_mode">Dark Mode</string>
+    <string name="title_dark_mode">主题模式</string>
     <string name="send_multiple_tokens">Send Multiple Tokens</string>
     <string name="switch_to_grid_view">Switch to Grid View</string>
     <string name="switch_to_list_view">Switch to List View</string>
     <string name="reload_metadata">Reload Metadata</string>
     <string name="label_market_price">Market Price:</string>
-    <string name="i_already_have_a_wallet">I already have a Wallet</string>
+    <string name="i_already_have_a_wallet">已有钱包</string>
     <string name="title_select_theme">Select Mode</string>
     <string name="title_network_info">Network Info</string>
     <string name="testnet">Testnet</string>
@@ -901,7 +901,7 @@
     <string name="label_current_price">Current Price</string>
     <string name="label_minimum_received">Minimum Received</string>
     <string name="label_balance">Balance: </string>
-    <string name="action_node_status">Node Status</string>
+    <string name="action_node_status">节点状态</string>
     <string name="title_select_token">Select Token</string>
     <string name="no_results_found">No results found</string>
     <string name="title_confirm_transaction">Confirm Transaction</string>
