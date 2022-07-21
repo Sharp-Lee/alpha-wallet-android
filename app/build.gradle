@@ -36,7 +36,7 @@ detekt {
 android_lint_reporter {
     lintFilePath = "./build/reports/lint-results-analyticsDebug.xml"
     detektFilePath = "./build/reports/detekt/detekt.xml"
-    githubOwner = "AlphaWallet"
+    githubOwner = "GSTWallet"
     githubRepositoryName = "alpha-wallet-android"
     showLog = true // optional - default to false, show extra information, will slow things down
 }
@@ -56,8 +56,8 @@ android {
         }
     }
     defaultConfig {
-        versionCode 199
-        versionName "3.58.0"
+        versionCode 1
+        versionName "1.0.0"
 
         applicationId "io.stormbird.wallet"
         minSdkVersion 23
