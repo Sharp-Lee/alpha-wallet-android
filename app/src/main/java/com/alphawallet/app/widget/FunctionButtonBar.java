@@ -562,13 +562,13 @@ public class FunctionButtonBar extends LinearLayout implements AdapterView.OnIte
             addStandardTokenFunctions(token);
         }
 
-        setupCustomTokenActions();
+//        setupCustomTokenActions();
 
         //Add buy function
-        if (hasBuyFunction)
-        {
-            addBuyFunction();
-        }
+//        if (hasBuyFunction)
+//        {
+//            addBuyFunction();
+//        }
 
         //now add the standard functions for NonFungibles (since these are lower priority)
         if (token.isNonFungible())
@@ -577,11 +577,11 @@ public class FunctionButtonBar extends LinearLayout implements AdapterView.OnIte
         }
 
         findViewById(R.id.layoutButtons).setVisibility(View.GONE);
-
-        if (!token.isNonFungible())
-        {
-            addFunction(new ItemClick(context.getString(R.string.generate_payment_request), R.string.generate_payment_request));
-        }
+//
+//        if (!token.isNonFungible())
+//        {
+//            addFunction(new ItemClick(context.getString(R.string.generate_payment_request), R.string.generate_payment_request));
+//        }
     }
 
     private void addTokenScriptFunctions(Map<String, TSAction> availableFunctions, Token token, BigInteger tokenId)

@@ -332,7 +332,7 @@ public class NewSettingsFragment extends BaseFragment
 
         walletSettingsLayout.addView(nameThisWallet, walletIndex++);
 
-        walletSettingsLayout.addView(walletConnectSetting, walletIndex++);
+//        walletSettingsLayout.addView(walletConnectSetting, walletIndex++);
 
         if (CustomViewSettings.getLockedChains().size() == 0)
             systemSettingsLayout.addView(selectNetworksSetting, systemIndex++);
@@ -340,7 +340,7 @@ public class NewSettingsFragment extends BaseFragment
         if (biometricsSetting != null)
             systemSettingsLayout.addView(biometricsSetting, systemIndex++);
 
-        systemSettingsLayout.addView(notificationsSetting, systemIndex++);
+//        systemSettingsLayout.addView(notificationsSetting, systemIndex++);
 
         systemSettingsLayout.addView(changeLanguage, systemIndex++);
 
@@ -350,15 +350,15 @@ public class NewSettingsFragment extends BaseFragment
 
         systemSettingsLayout.addView(advancedSetting, systemIndex++);
 
-        supportSettingsLayout.addView(supportSetting, supportIndex++);
+//        supportSettingsLayout.addView(supportSetting, supportIndex++);
     }
 
     private void setInitialSettingsData(View view)
     {
         TextView appVersionText = view.findViewById(R.id.text_version);
         appVersionText.setText(String.format(Locale.getDefault(), "%s (%d)", BuildConfig.VERSION_NAME, BuildConfig.VERSION_CODE));
-        TextView tokenScriptVersionText = view.findViewById(R.id.text_tokenscript_compatibility);
-        tokenScriptVersionText.setText(TOKENSCRIPT_CURRENT_SCHEMA);
+//        TextView tokenScriptVersionText = view.findViewById(R.id.text_tokenscript_compatibility);
+//        tokenScriptVersionText.setText(TOKENSCRIPT_CURRENT_SCHEMA);
 
         notificationsSetting.setToggleState(viewModel.getNotificationState());
     }
