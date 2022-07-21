@@ -92,9 +92,9 @@ public class NodeStatusActivity extends BaseActivity
         try
         {
             mainnetAdapter = new NodeStatusAdapter(mainNetList);
-            testnetAdapter = new NodeStatusAdapter(testNetList);
+//            testnetAdapter = new NodeStatusAdapter(testNetList);
             mainnetRecyclerView.setAdapter(mainnetAdapter);
-            testnetRecyclerView.setAdapter(testnetAdapter);
+//            testnetRecyclerView.setAdapter(testnetAdapter);
         }
         catch (Exception e)
         {

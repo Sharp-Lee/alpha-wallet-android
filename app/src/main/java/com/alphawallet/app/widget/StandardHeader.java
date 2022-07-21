@@ -57,6 +57,9 @@ public class StandardHeader extends LinearLayout
                 switchMaterial.setVisibility(View.GONE);
             }
 
+            // 隐藏链切换按钮
+            switchMaterial.setVisibility(View.GONE);
+
             if (showChainName)
             {
                 chainName.setVisibility(View.VISIBLE);
