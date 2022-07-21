@@ -20,6 +20,7 @@ public abstract class C {
     public static final int TERMINATE_ACTIVITY = 5;
     public static final int ADDED_TOKEN_RETURN = 9;
 
+    public static final String GST_NETWORK_NAME = "GSTChain";
     public static final String ETHEREUM_NETWORK_NAME = "Ethereum";
     public static final String CLASSIC_NETWORK_NAME = "Ethereum Classic";
     public static final String POA_NETWORK_NAME = "POA";
@@ -69,6 +70,7 @@ public abstract class C {
     public static final String POA_TICKER = "poa";
 
     public static final String USD_SYMBOL = "$";
+    public static final String GST_SYMBOL = "GST";
     public static final String ETH_SYMBOL = "ETH";
     public static final String xDAI_SYMBOL = "xDai";
     public static final String POA_SYMBOL = "POA";

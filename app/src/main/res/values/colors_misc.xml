@@ -13,6 +13,7 @@
     <color name="surface_faded">@color/translucent_light</color>
 
     <!-- Network Palette  -->
+    <color name="gstchain">#f1b300</color>
     <color name="mainnet">#2986AF</color>
     <color name="ropsten">#FF4A8D</color>
     <color name="kovan">#70578D</color>

@@ -15,12 +15,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+import static com.alphawallet.ethereum.EthereumNetworkBase.GSTCHAIN_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.MAINNET_ID;
 
 public class CustomViewSettings
 {
-    public static final long primaryChain = MAINNET_ID;
-    private static final String primaryChainName = C.ETHEREUM_NETWORK_NAME;
+//    public static final long primaryChain = MAINNET_ID;
+//    private static final String primaryChainName = C.ETHEREUM_NETWORK_NAME;
+    public static final long primaryChain = GSTCHAIN_ID;
+    private static final String primaryChainName = C.GST_NETWORK_NAME;
 
     //You can use the settings in this file to customise the wallet appearance
 
@@ -48,7 +51,8 @@ public class CustomViewSettings
     );
 
     public static final List<Long> alwaysVisibleChains = Arrays.asList(
-            EthereumNetworkBase.MAINNET_ID
+//            EthereumNetworkBase.MAINNET_ID
+            GSTCHAIN_ID
     );
 
     public static boolean alwaysShow(long chainId)

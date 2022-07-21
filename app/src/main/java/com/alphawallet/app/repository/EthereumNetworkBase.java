@@ -23,6 +23,8 @@ import static com.alphawallet.ethereum.EthereumNetworkBase.FANTOM_TEST_RPC_URL;
 import static com.alphawallet.ethereum.EthereumNetworkBase.FUJI_TEST_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.FUJI_TEST_RPC_URL;
 import static com.alphawallet.ethereum.EthereumNetworkBase.GOERLI_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.GSTCHAIN_ID;
+import static com.alphawallet.ethereum.EthereumNetworkBase.GSTCHAIN_RPC_URL;
 import static com.alphawallet.ethereum.EthereumNetworkBase.HECO_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.HECO_TEST_ID;
 import static com.alphawallet.ethereum.EthereumNetworkBase.IOTEX_MAINNET_ID;
@@ -88,9 +90,9 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://alphawallet.com/browser/";
+    private static final String DEFAULT_HOMEPAGE = "https://www.dapp.com/";
 
-    private static final String POLYGON_HOMEPAGE = "https://alphawallet.com/browser-item-category/polygon/";
+    private static final String POLYGON_HOMEPAGE = "https://www.dapp.com/";
 
     private static final String GAS_API = "module=gastracker&action=gasoracle";
 
@@ -197,14 +199,19 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //Note: This list also determines the order of display for main net chains in the wallet.
     //If your wallet prioritises xDai for example, you may want to move the XDAI_ID to the front of this list,
     //Then xDai would appear as the first token at the top of the wallet
-    private static final List<Long> hasValue = new ArrayList<>(Arrays.asList(
-            MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, BINANCE_MAIN_ID, HECO_ID, AVALANCHE_ID,
-            FANTOM_ID, MATIC_ID, OPTIMISTIC_MAIN_ID, CRONOS_MAIN_ID, ARBITRUM_MAIN_ID, PALM_ID, KLAYTN_ID, IOTEX_MAINNET_ID, AURORA_MAINNET_ID, MILKOMEDA_C1_ID,
-            PHI_NETWORK_MAIN_ID));
+//    private static final List<Long> hasValue = new ArrayList<>(Arrays.asList(
+//            MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, BINANCE_MAIN_ID, HECO_ID, AVALANCHE_ID,
+//            FANTOM_ID, MATIC_ID, OPTIMISTIC_MAIN_ID, CRONOS_MAIN_ID, ARBITRUM_MAIN_ID, PALM_ID, KLAYTN_ID, IOTEX_MAINNET_ID, AURORA_MAINNET_ID, MILKOMEDA_C1_ID,
+//            PHI_NETWORK_MAIN_ID));
+    private static final List<Long> hasValue = new ArrayList<>(Arrays.asList(GSTCHAIN_ID, MAINNET_ID, BINANCE_MAIN_ID));
 
     // for reset built-in network
     private static final LongSparseArray<NetworkInfo> builtinNetworkMap = new LongSparseArray<NetworkInfo>() {
         {
+            put(GSTCHAIN_ID, new NetworkInfo(C.GST_NETWORK_NAME, C.GST_SYMBOL,
+                    GSTCHAIN_RPC_URL,
+                    "https://gstchain.org/tx/", GSTCHAIN_ID,
+                    GSTCHAIN_RPC_URL, "https://gstchain.org/api?"));
             put(MAINNET_ID, new NetworkInfo(C.ETHEREUM_NETWORK_NAME, C.ETH_SYMBOL,
                     MAINNET_RPC_URL,
                     "https://cn.etherscan.com/tx/", MAINNET_ID,
@@ -365,6 +372,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     private static final LongSparseArray<Integer> chainLogos = new LongSparseArray<Integer>() {
         {
+            put(GSTCHAIN_ID, R.drawable.ic_token_gst);
             put(MAINNET_ID, R.drawable.ic_token_eth);
             put(KOVAN_ID, R.drawable.ic_kovan);
             put(ROPSTEN_ID, R.drawable.ic_ropsten);
@@ -408,6 +416,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     private static final LongSparseArray<Integer> smallChainLogos = new LongSparseArray<Integer>() {
         {
+            put(GSTCHAIN_ID, R.drawable.ic_icons_network_gst);
             put(MAINNET_ID, R.drawable.ic_icons_network_eth);
             put(KOVAN_ID, R.drawable.ic_kovan);
             put(ROPSTEN_ID, R.drawable.ic_ropsten);
@@ -451,6 +460,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 
     private static final LongSparseArray<Integer> chainColours = new LongSparseArray<Integer>() {
         {
+            put(GSTCHAIN_ID, R.color.gstchain);
             put(MAINNET_ID, R.color.mainnet);
             put(KOVAN_ID, R.color.kovan);
             put(ROPSTEN_ID, R.color.ropsten);

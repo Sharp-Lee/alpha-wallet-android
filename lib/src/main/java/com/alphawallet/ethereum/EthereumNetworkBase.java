@@ -8,6 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public abstract class EthereumNetworkBase { // implements EthereumNetworkRepositoryType
+    public static final long GSTCHAIN_ID = 8199;
     public static final long MAINNET_ID = 1;
     public static final long CLASSIC_ID = 61;
     public static final long POA_ID = 99;
@@ -49,6 +50,7 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final long PHI_MAIN_ID = 4181;
 
 
+    public static final String GSTCHAIN_RPC_URL = "https://rpc.gstchain.org";
     public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
     public static final String XDAI_RPC_URL = "https://rpc.ankr.com/gnosis";
