@@ -14,7 +14,7 @@
     <string name="ok">确定</string>
     <string name="barcode_error_format">无效条形码格式：%s</string>
     <string name="title_delete_account">是否确定要删除钱包？</string>
-    <string name="error_import">导入密钥库时出错</string>
+    <string name="error_import">导入KeyStore时出错</string>
     <string name="error_deleting_account">删除钱包时出错</string>
     <string name="do_manage_make_backup">您是否已成功进行备份？</string>
     <string name="yes_continue">是，继续</string>
@@ -286,9 +286,9 @@
     <string name="action_import">导入</string>
     <string name="prompt_password">密码</string>
     <string name="enter_password">输入密码</string>
-    <string name="hint_keystore">密钥库 *</string>
+    <string name="hint_keystore">KeyStore *</string>
     <string name="tab_seed">种子</string>
-    <string name="tab_keystore">密钥库</string>
+    <string name="tab_keystore">KeyStore</string>
     <string name="tab_private_key">私人钥匙码</string>
     <string name="hint_contract_symbol">符号</string>
     <string name="hint_contract_decimals">小数点</string>
@@ -459,9 +459,9 @@
     <string name="lose_this_wallet">丢失此钱包</string>
     <string name="seed_phrase_loss_warning">若无法访问此设备，您的资金将丢失，除非您有备份！</string>
     <string name="delete_lose_funds_warning">小心删除钱包。如果您没有备份钱包，可能会失去所有资金。</string>
-    <string name="export_keystore_json">导出密钥库 JSON</string>
-    <string name="what_is_keystore_json">什么是密钥库 JSON？</string>
-    <string name="export_keystore_detail">密钥库是一个文本文件。当您要导入钱包时，可以复制其内容和位置。</string>
+    <string name="export_keystore_json">导出KeyStore JSON</string>
+    <string name="what_is_keystore_json">什么是KeyStore JSON？</string>
+    <string name="export_keystore_detail">KeyStore是一个文本文件。当您要导入钱包时，可以复制其内容和位置。</string>
     <string name="test_seed_phrase">测试我的助记词</string>
     <string name="make_a_backup">备份操作简单安全，只需写下 %1$s 个单词，并将其保存在一个离线的安全地方即可。</string>
     <string name="keystore_detail_text">密钥库是一个文本文件。当您要导入钱包时，可以复制其内容和位置。这是备份钱包的安全方法。</string>
