@@ -289,11 +289,11 @@
     <string name="hint_keystore">KeyStore *</string>
     <string name="tab_seed">种子</string>
     <string name="tab_keystore">KeyStore</string>
-    <string name="tab_private_key">私人钥匙码</string>
+    <string name="tab_private_key">私钥</string>
     <string name="hint_contract_symbol">符号</string>
     <string name="hint_contract_decimals">小数点</string>
     <string name="title_add_token">添加订制代币</string>
-    <string name="suggestion_private_key">私人钥匙码至少64字数。</string>
+    <string name="suggestion_private_key">私钥至少64字数。</string>
     <string name="qr_scanner">二维码扫描仪</string>
     <string name="dialog_title_select_locale">选择语言：</string>
     <string name="settings_locale_lang">更换语言</string>
@@ -494,7 +494,7 @@
     <string name="create_a_new_wallet">创建钱包</string>
     <string name="watch">查看</string>
     <string name="already_have_a_wallet">我已经有一个钱包：</string>
-    <string name="watch_wallet">只能查看的钱包</string>
+    <string name="watch_wallet">观察钱包</string>
     <string name="suggestion_address">输入以大太坊地址</string>
     <string name="ethereum_address_hint">GST地址：0x 后面跟着 40 个字符（范围为 0–9、a-f、A-F）</string>
     <string name="action_watch_account">查看钱包</string>
