@@ -877,7 +877,9 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
         }
         else
         {
-            return R.drawable.ic_ethereum_generic;
+//            return R.drawable.ic_ethereum_generic;
+            return R.drawable.ic_gstchain;
+
         }
     }
 

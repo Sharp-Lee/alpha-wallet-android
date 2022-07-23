@@ -720,7 +720,8 @@ public class WalletConnectActivity extends BaseActivity implements ActionSheetCa
         {
             if (remotePeerData.getIcons().isEmpty())
             {
-                icon.setImageResource(R.drawable.ic_coin_eth_small);
+//                icon.setImageResource(R.drawable.ic_coin_eth_small);
+                icon.setImageResource(R.drawable.ic_coin_gst_small);
             }
             else
             {
