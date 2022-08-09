@@ -811,7 +811,7 @@
     <string name="no_chart_data_available">No chart data available</string>
     <string name="wallet_total_change">%1$s (%2$s%%) 今天</string>
     <string name="title_wallets_summary">Wallets</string>
-    <string name="summary">Summary</string>
+    <string name="summary">总览</string>
     <string name="network_menu_item">网络: %1$s</string>
     <string name="action_set_as_homepage">设为主页</string>
     <string name="action_networks">网络</string>
